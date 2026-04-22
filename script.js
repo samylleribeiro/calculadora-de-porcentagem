@@ -12,16 +12,16 @@ function VerificarPorcentagem() {
 
     // 3. Fazer o cálculo
     // Exemplo: quanto num1 representa de num2
-    let porcentagem = (num1 / num2) * 100;
+    let resultadoFinal=(num1/100)*num2;
 
-    if (porcentagem >= 50) {
+    if (resultadoFinal >= 20) {
         resultadoHTML.style.color="green";
     } else {
         resultadoHTML.style.color="orange"
     }
 
    // 4. Exibir a mensagem final
-    resultadoHTML.innerText = `${num1} é ${porcentagem.toFixed(2)}% de ${num2}`;
+    resultadoHTML.innerText = `${num1}% de ${num2} é ${resultadoFinal.toFixed(2)}`;
     // .toFixed(2) serve para arredondar para 2 casas decimais (ex: 25.50)
 }
 function LimparCampos() {
