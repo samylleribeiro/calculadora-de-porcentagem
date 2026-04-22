@@ -1,0 +1,63 @@
+/*estilo do titulo*/
+h1 {
+ color: blue;
+ text-align: center;   
+}
+/*estilo geral*/
+body {
+    display: flex;;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+   
+}
+/*estilo do card*/
+.calculadora {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0,1);
+    max-width: 400px;
+    margin: 50px auto;
+}
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+/* Botão Verificar (o primeiro botão) */
+button:first-of-type {
+    background-color: blue; /* Azul clássico */
+    color: white;              /* Letras brancas */
+    border: none;              /* Tira aquela bordinha cinza chata */
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;         /* Deixa a letra mais fortinha */
+}
+/* Botão Limpar (o segundo botão) */
+button:last-of-type {
+    background-color: #e74c3c; /* vermelho */
+    color: white;              /* Letras brancas para combinar */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;          /* Dá um espacinho entre eles */
+}
+/*efeito de brilho quando passar o mouse */
+button:hover {
+    filter: brightness(1.1);
+} 
+resultado {
+    display: block;
+    margin-top: 20px;
+    color: #2c3e50;
+    font-family: sans-serif;
+}
+
+
